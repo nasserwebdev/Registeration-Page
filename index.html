@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    
+    <div class="register-form">
+        <form action="">
+            <div>
+                <label class="form-label" for="f-name">First Name</label>
+                <input class="form-control" id="f-name" type="First Name" id="f-name" onmouseover="fun2()">
+            </div>
+            <div>
+                <label class="form-label" for="l-name">Last Name</label>
+                <input class="form-control" type="email" id="l-name" onmouseover="fun3()">
+            </div>
+            <div>
+                <label class="form-label" for="email">Email</label>
+                <input class="form-control" type="email" id="email" onmouseover="fun4()">
+            </div>
+            <div>
+                <label class="form-label" for="pass">Password</label>
+                <input class="form-control" type="pass" id="pass" onmouseover="fun5()">
+            </div>
+            <div>
+                <label class="form-label" for="city">City</label>
+                <select id="city" class="city-select">
+                    <option value="amman">Amman</option>
+                    <option value="zarqa">Zarqa</option>
+                    <option value="irbid">Irbid</option>
+                    <option value="ajloun">Ajloun</option>
+                    <option value="jarash">Jarash</option>
+                    <option value="madaba">Madaba</option>
+                    <option value="mafraq">Mafraq</option>
+                    <option value="karak">Karak</option>
+                    <option value="tafilah">Tafilah</option>
+                </select>
+            </div>
+            <div>
+                <span class="form-label">Gender</span>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+            </div>
+            <div>
+                <span class="form-label">Study Level</span>
+                <input type="checkbox" id="ba">
+                <label for="ba">BA</label>
+                <input type="checkbox" id="master">
+                <label for="master">Master</label>
+                <input type="checkbox" id="phd">
+                <label for="phd">phD</label>
+            </div>
+            <div>
+                <button onclick="fun1()">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function fun1 () {
+            document.getElementById('body').style.backgroundColor = '#196bde';
+            
+            var lastName = document.getElementById('l-name');
+            var email = document.getElementById('email');
+            var pass = document.getElementById('pass');
+        }
+
+        function fun2 () {
+            document.getElementById('f-name').placeholder='Your First Name';
+        }
+
+        function fun3 () {
+            document.getElementById('l-name').placeholder='Your Last Name';
+        }
+
+        function fun4 () {
+            document.getElementById('email').placeholder='Your Email';
+        }
+
+        function fun5 () {
+            document.getElementById('pass').placeholder='Strong Password';
+        }
+    </script>
+</body>
+</html>
